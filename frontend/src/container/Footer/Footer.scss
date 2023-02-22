@@ -1,0 +1,159 @@
+.app__footer {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.app__footer-cards {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4em 2rem 2rem;
+
+  .app__footer-card {
+    min-width: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fef4f5;
+
+    transition: all 0.3s ease-in-out;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 0.7rem;
+    }
+
+    p {
+      font-weight: 500;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+    &:hover {
+      box-shadow: 0 0 15px #fef4f5;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+  background-color: #f2f7fb;
+}
+
+.app__footer-cards .app__footer-card:last-child:hover {
+  box-shadow: 0 0 25px #f2f7fb;
+}
+
+.app__footer-form {
+  width: 60%;
+  flex-direction: row;
+  // margin: 1rem 2rem;
+ 
+
+
+  div {
+    width: 100%;
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--white-color);
+
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 80%;
+      height: 50%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 3rem;
+      background-color: var(--white-color);
+
+      font-family: var(--font-base);
+      color: var(--black-color);
+      outline: none;
+      
+    }
+
+    textarea {
+      height: 50px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 15px var(--primary-color);
+    }
+  }
+
+.input-text{
+  // margin-left: 5rem;
+}
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    height: 85%;
+    width: 40%;
+    border: none;
+    background-color: var(--secondary-color);
+
+    font-weight: 500;
+    margin-left: 1rem;
+    color: var(--white-color);
+    outline: none;
+    font-family: var(--font-base);
+
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2430af;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+.app__footerBtm {
+  margin-top: 3rem;
+  margin-bottom: -8rem;
+
+  p {
+    margin-top: 4rem;
+  }
+   
+ 
+
+}
+
+hr {
+  width: 98%;
+  margin-bottom: -5rem;
+  margin-top: 5rem;
+  border-color: #141414;
+  
+}
